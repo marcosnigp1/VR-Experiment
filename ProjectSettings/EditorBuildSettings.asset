@@ -4,5 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Samples/01_Workflow/01_Workflow.unity
+    guid: 7a4a7a8dbf8ec044393529acdc798aca
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 29019afd4af420149952737aee2ddff9, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: adf860c9f92796046ae099cf29ae5973, type: 2}
