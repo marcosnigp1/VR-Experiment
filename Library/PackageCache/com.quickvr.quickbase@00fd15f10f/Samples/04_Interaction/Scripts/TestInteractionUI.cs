@@ -92,13 +92,8 @@ namespace QuickVR.SampleInteraction
 
             //_toggleDirectMove.isOn = true;
             //_toggleDirectTurn.isOn = true;
-
-
-
-            //Marcos:  Enabled these to continue testing.
-
-            _toggleContinuousMove.isOn = true;
-            _toggleContinuousTurn.isOn = true;
+            //_toggleContinuousMove.isOn = true;
+            //_toggleContinuousTurn.isOn = true;
             //_toggleWalkInPlace.isOn = true;
             _toggleUIRayRightHand.isOn = true;
 
@@ -133,11 +128,6 @@ namespace QuickVR.SampleInteraction
                 {
                     //By default, enable the ui interactor for the right hand. 
                     _toggleUIRayRightHand.isOn = true;
-
-
-                    //Marcos:  Enabled these to continue testing.
-                    _toggleContinuousMove.isOn = true;
-                    _toggleContinuousTurn.isOn = true;
                 }
             }
 

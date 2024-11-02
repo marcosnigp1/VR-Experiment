@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2022.3.10f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/VR-Experiment
+D:/VR-Experiment
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-54977
-Successfully changed project path to: C:/VR-Experiment
-C:/VR-Experiment
+51759
+Successfully changed project path to: D:/VR-Experiment
+D:/VR-Experiment
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -49,16 +49,16 @@ C:/VR-Experiment
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [1556] Host "[IP] 10.243.73.232 [Port] 0 [Flags] 2 [Guid] 3506300445 [EditorId] 3506300445 [Version] 1048832 [Id] WindowsEditor(7,mdho) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [53380] Host "[IP] 10.10.0.43 [Port] 0 [Flags] 2 [Guid] 1478110895 [EditorId] 1478110895 [Version] 1048832 [Id] WindowsEditor(7,mdho) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [1556] Host "[IP] 10.243.73.232 [Port] 0 [Flags] 2 [Guid] 3506300445 [EditorId] 3506300445 [Version] 1048832 [Id] WindowsEditor(7,mdho) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [53380] Host "[IP] 10.10.0.43 [Port] 0 [Flags] 2 [Guid] 1478110895 [EditorId] 1478110895 [Version] 1048832 [Id] WindowsEditor(7,mdho) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 26.79 ms, found 10 plugins.
+Refreshing native plugins compatible for Editor in 32.16 ms, found 10 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.10f1 (ff3792e53c62)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/VR-Experiment/Assets
+[Subsystems] Discovering subsystems at path D:/VR-Experiment/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
@@ -70,47 +70,47 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56896
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56528
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.013241 seconds.
-- Loaded All Assemblies, in  0.480 seconds
+Registered in 0.012699 seconds.
+- Loaded All Assemblies, in  0.692 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 343 ms
+Android Extension - Scanning For ADB Devices 525 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.719 seconds
-Domain Reload Profiling: 1198ms
-	BeginReloadAssembly (142ms)
+- Finished resetting the current domain, in  1.115 seconds
+Domain Reload Profiling: 1803ms
+	BeginReloadAssembly (193ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (86ms)
-	LoadAllAssembliesAndSetupDomain (193ms)
-		LoadAssemblies (140ms)
+	RebuildCommonClasses (79ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (113ms)
+	LoadAllAssembliesAndSetupDomain (286ms)
+		LoadAssemblies (192ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (191ms)
-			TypeCache.Refresh (189ms)
-				TypeCache.ScanAssembly (170ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
+		AnalyzeDomain (281ms)
+			TypeCache.Refresh (278ms)
+				TypeCache.ScanAssembly (246ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (720ms)
+	FinalizeReload (1115ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (652ms)
+		SetupLoadedEditorAssemblies (998ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (474ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (750ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (119ms)
-			ProcessInitializeOnLoadMethodAttributes (51ms)
+			ProcessInitializeOnLoadAttributes (162ms)
+			ProcessInitializeOnLoadMethodAttributes (76ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -118,8 +118,8 @@ Domain Reload Profiling: 1198ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.101 seconds
-Refreshing native plugins compatible for Editor in 16.51 ms, found 10 plugins.
+- Loaded All Assemblies, in  1.038 seconds
+Refreshing native plugins compatible for Editor in 16.68 ms, found 10 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -136,47 +136,47 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.253 seconds
-Domain Reload Profiling: 2351ms
-	BeginReloadAssembly (236ms)
+- Finished resetting the current domain, in  1.344 seconds
+Domain Reload Profiling: 2381ms
+	BeginReloadAssembly (199ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (11ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (71ms)
-	RebuildNativeTypeToScriptingClass (22ms)
-	initialDomainReloadingComplete (71ms)
-	LoadAllAssembliesAndSetupDomain (698ms)
-		LoadAssemblies (473ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (725ms)
+		LoadAssemblies (414ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (365ms)
-			TypeCache.Refresh (320ms)
-				TypeCache.ScanAssembly (292ms)
-			ScanForSourceGeneratedMonoScriptInfo (33ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (1254ms)
+		AnalyzeDomain (417ms)
+			TypeCache.Refresh (356ms)
+				TypeCache.ScanAssembly (329ms)
+			ScanForSourceGeneratedMonoScriptInfo (46ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (1345ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (954ms)
+		SetupLoadedEditorAssemblies (1033ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (35ms)
+			InitializePlatformSupportModulesInManaged (38ms)
 			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (136ms)
-			ProcessInitializeOnLoadAttributes (682ms)
-			ProcessInitializeOnLoadMethodAttributes (88ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (0ms)
+			BeforeProcessingInitializeOnLoad (113ms)
+			ProcessInitializeOnLoadAttributes (796ms)
+			ProcessInitializeOnLoadMethodAttributes (69ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 20.05 ms, found 10 plugins.
+Refreshing native plugins compatible for Editor in 14.96 ms, found 10 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5246 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 83 unused Assets / (75.9 KB). Loaded Objects now: 5751.
-Memory consumption went from 178.7 MB to 178.6 MB.
-Total: 9.270200 ms (FindLiveObjects: 0.963900 ms CreateObjectMapping: 0.796200 ms MarkObjects: 7.185400 ms  DeleteObjects: 0.322000 ms)
+Unloading 5244 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 100 unused Assets / (2.0 MB). Loaded Objects now: 5746.
+Memory consumption went from 187.8 MB to 185.8 MB.
+Total: 7.275900 ms (FindLiveObjects: 0.534400 ms CreateObjectMapping: 0.725600 ms MarkObjects: 4.879800 ms  DeleteObjects: 1.134600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -194,62 +194,102 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 681044.343894 seconds.
-  path: Packages/com.quickvr.quickbase/Runtime/Media/VRModels/oculus_cv1_controller_left/oculus_cv1_controller_left_button_y.obj
-  artifactKey: Guid(7dfb5fa963fcbc5408368ff54fd9824f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.quickvr.quickbase/Runtime/Media/VRModels/oculus_cv1_controller_left/oculus_cv1_controller_left_button_y.obj using Guid(7dfb5fa963fcbc5408368ff54fd9824f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '273ac6e2cd45b36499802d7ce5174315') in 0.245372 seconds
+  Time since last request: 1352228.859591 seconds.
+  path: Assets/VRExperiment/Prefabs/Avatars
+  artifactKey: Guid(2604783c07e7afa449e8fad2a11b204a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRExperiment/Prefabs/Avatars using Guid(2604783c07e7afa449e8fad2a11b204a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.635424 seconds
+Import Error Code:(4)
+Message: Build asset version error: assets/vrexperiment/prefabs/avatars.meta in SourceAssetDB has modification time of '2024-11-02T11:07:53.7874576Z' while content on disk has modification time of '0001-01-01T00:00:00Z' with error code 2
+Stacktrace:
+0x00007ff64bf4282d (Unity) StackWalker::GetCurrentCallstack
+0x00007ff64bf477d9 (Unity) StackWalker::ShowCallstack
+0x00007ff64cf17831 (Unity) GetStacktrace
+0x00007ff64d2b0d23 (Unity) GetAssetHashAndValidate
+0x00007ff64d2ab5ab (Unity) AssetVersionBuilder::BuildHashOfSourceAssetArray
+0x00007ff64d2a940c (Unity) AssetVersionBuilder::BuildAssetVersion
+0x00007ff64d22d681 (Unity) CreateAssetVersionBuilder
+0x00007ff64d234731 (Unity) ImportToObjects
+0x00007ff64d2334cc (Unity) ImportAsset
+0x00007ff64d258328 (Unity) AssetImportWorker::Import
+0x00007ff64d2bfdd2 (Unity) <lambda_183697078dc22ecb201e4599e9982eaf>::operator()
+0x00007ff64d2fbf32 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)>,asio::io_context::basic_executor_type<std::allocator<void>,0> >::do_complete
+0x00007ff64d2e7ede (Unity) asio::detail::win_iocp_io_context::do_one
+0x00007ff64d2e9b44 (Unity) asio::detail::win_iocp_io_context::run
+0x00007ff64d2fa2dc (Unity) IOService::Run
+0x00007ff64d2ce65f (Unity) AssetImportWorkerClient::Run
+0x00007ff64d299227 (Unity) RunAssetImportWorkerClientV2
+0x00007ff64d2992ab (Unity) RunAssetImporterV2
+0x00007ff64ca9a750 (Unity) Application::InitializeProject
+0x00007ff64cf23635 (Unity) WinMain
+0x00007ff64e307dbe (Unity) __scrt_common_main_seh
+0x00007fffd86c257d (KERNEL32) BaseThreadInitThunk
+0x00007fffd934af08 (ntdll) RtlUserThreadStart
+
+  ERROR: Build asset version error: assets/vrexperiment/prefabs/avatars.meta in SourceAssetDB has modification time of '2024-11-02T11:07:53.7874576Z' while content on disk has modification time of '0001-01-01T00:00:00Z' with error code 2
+Stacktrace:
+0x00007ff64bf4282d (Unity) StackWalker::GetCurrentCallstack
+0x00007ff64bf477d9 (Unity) StackWalker::ShowCallstack
+0x00007ff64cf17831 (Unity) GetStacktrace
+0x00007ff64d2b0d23 (Unity) GetAssetHashAndValidate
+0x00007ff64d2ab5ab (Unity) AssetVersionBuilder::BuildHashOfSourceAssetArray
+0x00007ff64d2a940c (Unity) AssetVersionBuilder::BuildAssetVersion
+0x00007ff64d22d681 (Unity) CreateAssetVersionBuilder
+0x00007ff64d234731 (Unity) ImportToObjects
+0x00007ff64d2334cc (Unity) ImportAsset
+0x00007ff64d258328 (Unity) AssetImportWorker::Import
+0x00007ff64d2bfdd2 (Unity) <lambda_183697078dc22ecb201e4599e9982eaf>::operator()
+0x00007ff64d2fbf32 (Unity) asio::detail::completion_handler<core::mutable_function<void __cdecl(void)>,asio::io_context::basic_executor_type<std::allocator<void>,0> >::do_complete
+0x00007ff64d2e7ede (Unity) asio::detail::win_iocp_io_context::do_one
+0x00007ff64d2e9b44 (Unity) asio::detail::win_iocp_io_context::run
+0x00007ff64d2fa2dc (Unity) IOService::Run
+0x00007ff64d2ce65f (Unity) AssetImportWorkerClient::Run
+0x00007ff64d299227 (Unity) RunAssetImportWorkerClientV2
+0x00007ff64d2992ab (Unity) RunAssetImporterV2
+0x00007ff64ca9a750 (Unity) Application::InitializeProject
+0x00007ff64cf23635 (Unity) WinMain
+0x00007ff64e307dbe (Unity) __scrt_common_main_seh
+0x00007fffd86c257d (KERNEL32) BaseThreadInitThunk
+0x00007fffd934af08 (ntdll) RtlUserThreadStart
+
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000077 seconds.
-  path: Packages/com.quickvr.quickbase/Runtime/Media/VRModels/oculus_cv1_controller_right/oculus_cv1_controller_right_button_home.obj
-  artifactKey: Guid(0f1089b6eae6d5a48b7e8a82beab5eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.quickvr.quickbase/Runtime/Media/VRModels/oculus_cv1_controller_right/oculus_cv1_controller_right_button_home.obj using Guid(0f1089b6eae6d5a48b7e8a82beab5eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '757296ca146e4ea5d72b2261ba6ff30f') in 0.052544 seconds
+  Time since last request: 1.069817 seconds.
+  path: Assets/VRExperiment/Textures
+  artifactKey: Guid(242073d9b928103469b81d72c728a99a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRExperiment/Textures using Guid(242073d9b928103469b81d72c728a99a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4e63a3954c94e0e3ab533a7e5bf3d71') in 0.000604 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Samples/02_InputManager/Media/ChessBoardFloor.mat
-  artifactKey: Guid(f659dca68e2f0954bada2d1674e9ebf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Samples/02_InputManager/Media/ChessBoardFloor.mat using Guid(f659dca68e2f0954bada2d1674e9ebf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '427f799271e7fef46c6b071f9d6b2ab4') in 0.029253 seconds
+  Time since last request: 1.964581 seconds.
+  path: Assets/VRExperiment/Materials
+  artifactKey: Guid(e657e17de9bcd7040a6d00fc53e7c3c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRExperiment/Materials using Guid(e657e17de9bcd7040a6d00fc53e7c3c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '942d3e826e911ba51099e5114320a298') in 0.000481 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Packages/com.quickvr.quickbase/Runtime/Media/VRModels/oculus_cv1_controller_right/oculus_cv1_controller_right_button_b.obj
-  artifactKey: Guid(4e8e3446b2434b44aacc858aab938dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.quickvr.quickbase/Runtime/Media/VRModels/oculus_cv1_controller_right/oculus_cv1_controller_right_button_b.obj using Guid(4e8e3446b2434b44aacc858aab938dd5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d3ca1c3bf324dcee8ef1b16b22a7233') in 0.053794 seconds
+  Time since last request: 2.448529 seconds.
+  path: Assets/VRExperiment/Audio
+  artifactKey: Guid(05ce4927345bb2e4693a4992b4d88ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRExperiment/Audio using Guid(05ce4927345bb2e4693a4992b4d88ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92891db6b7bca1f836bc33d404f8bec5') in 0.000464 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Packages/com.quickvr.quickbase/Runtime/Media/VRModels/oculus_cv1_controller_right/oculus_cv1_controller_right_body.obj
-  artifactKey: Guid(17f246d2d989d9a4da3a7f4673974618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.quickvr.quickbase/Runtime/Media/VRModels/oculus_cv1_controller_right/oculus_cv1_controller_right_body.obj using Guid(17f246d2d989d9a4da3a7f4673974618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2553b45a1a3bac17167ce6f5d2b47ebd') in 0.061580 seconds
+  Time since last request: 1.855284 seconds.
+  path: Assets/VRExperiment/VRExperiment
+  artifactKey: Guid(6d578887a30d4cc4195da4de040b6d93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRExperiment/VRExperiment using Guid(6d578887a30d4cc4195da4de040b6d93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a144fe95da2281bbe0ab868e7640df92') in 0.000479 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Packages/com.quickvr.quickbase/Runtime/Media/VRModels/oculus_cv1_controller_right/oculus_cv1_controller_right_thumbstick.obj
-  artifactKey: Guid(0dd1b534f52815144a9539a7b489f419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.quickvr.quickbase/Runtime/Media/VRModels/oculus_cv1_controller_right/oculus_cv1_controller_right_thumbstick.obj using Guid(0dd1b534f52815144a9539a7b489f419) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37972aa44bfea051186a6fc9019d0a54') in 0.052819 seconds
+  Time since last request: 1.205966 seconds.
+  path: Assets/VRExperiment/VRExperiment.unity
+  artifactKey: Guid(0d618422ab45ab049bdd0d606ec0db91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/VRExperiment/VRExperiment.unity using Guid(0d618422ab45ab049bdd0d606ec0db91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ac642951dc5c655c17a778d94677965') in 0.000556 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Packages/com.quickvr.quickbase/Runtime/Media/VRModels/oculus_cv1_controller_right/oculus_cv1_controller_right_button_a.obj
-  artifactKey: Guid(0d6fd114b3214f94bb311ce493cc18ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.quickvr.quickbase/Runtime/Media/VRModels/oculus_cv1_controller_right/oculus_cv1_controller_right_button_a.obj using Guid(0d6fd114b3214f94bb311ce493cc18ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eee9694f1b8d2cde9387afb0cbb9c18d') in 0.057398 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 11
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Number of asset objects unloaded after import = 0
