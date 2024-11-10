@@ -3251,20 +3251,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85037a165e31fde4aadb4156e8d90fb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parentObject: {fileID: 1002489206}
+  allCanvas: []
   main_output: {fileID: 1419556313}
-  output1: {fileID: 2072772012}
-  output2: {fileID: 659583470}
-  output3: {fileID: 1327759998}
-  output4: {fileID: 1275522776}
-  output5: {fileID: 1094236119}
-  output6: {fileID: 347138244}
-  output7: {fileID: 2138251873}
-  output8: {fileID: 1416371361}
-  output9: {fileID: 1894913584}
-  text: {fileID: 0}
   numbers: []
   generated_numbers: []
-  canva_to_display: []
+  canva_to_display: 
 --- !u!1 &251889210
 GameObject:
   m_ObjectHideFlags: 0
@@ -3335,6 +3327,7 @@ Transform:
   - {fileID: 1170845989}
   - {fileID: 477335311}
   - {fileID: 47739417}
+  - {fileID: 1157791123}
   - {fileID: 1002489207}
   m_Father: {fileID: 167227247}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17977,7 +17970,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1157791123}
   - {fileID: 17687762}
   - {fileID: 1348300830}
   - {fileID: 1552248817}
@@ -19718,13 +19710,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157791122}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.139, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.13899994, y: 1.9100001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 280678120}
-  m_Father: {fileID: 1002489207}
+  m_Father: {fileID: 253982335}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1157885881 stripped
 Transform:
@@ -20473,7 +20465,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1411516550990969898, guid: 1c0a1103aa90aff45a648827e87681a5, type: 3}
       propertyPath: near clip plane
-      value: 0.25830513
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 1411516550990969898, guid: 1c0a1103aa90aff45a648827e87681a5, type: 3}
       propertyPath: orthographic size

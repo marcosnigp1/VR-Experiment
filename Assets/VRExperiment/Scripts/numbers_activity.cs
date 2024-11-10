@@ -9,45 +9,39 @@ using Random = UnityEngine.Random; //This helps to fix conflicts with system.
 public class numbers_activity : MonoBehaviour
 {
 
-    public TextMeshProUGUI main_output; //Main testing field
+    //Parent GameObject
+    public GameObject parentObject;  //Done with help of: https://www.youtube.com/watch?v=JAkD9bwQVAE
+    public GameObject[] allCanvas;
 
     //Output fields
+    public TextMeshProUGUI main_output; //Main testing field
 
-    //Yes, I have to declare many since they are the output fields...
-    public Canvas output1;
-    public Canvas output2;
-    public Canvas output3;
-    public Canvas output4;
-    public Canvas output5;
-    public Canvas output6;
-    public Canvas output7;
-    public Canvas output8;
-    public Canvas output9;
-
-
-    //Get the label values from the canvas
-    public TextMeshProUGUI text;
-
-    // -------------------- //
-
- 
     //Creating list (array is not recommended).
     public List<float> numbers;
     public List<string> generated_numbers;
-    public List<Canvas> canva_to_display;
+    public List<int> canva_to_display;
+
+    //Start is called before the first frame update
+    //Done with help of: https://www.youtube.com/watch?v=JAkD9bwQVAE
+    void Start(){
+
+        //Make all canvas untoggable.
+        allCanvas = new GameObject[parentObject.transform.childCount];
+
+        for (int i=0; i<allCanvas.Length; i++){
+            allCanvas[i] = parentObject.transform.GetChild(i).GetChild(0).gameObject;
+            allCanvas[i].SetActive(false); //Disable all the canvas.
+        }
+    }
+
 
     public void GenerateNumbers(){
 
-        //Make all canvas untoggable.
-        output1.enabled = false;
-        output2.enabled = false;
-        output3.enabled = false;
-        output4.enabled = false;
-        output5.enabled = false;
-        output6.enabled = false;
-        output7.enabled = false;
-        output8.enabled = false;
-        output9.enabled = false;
+        //Reset canvas state
+        for (int i=0; i<allCanvas.Length; i++){
+            allCanvas[i].SetActive(false); //Disable all the canvas.
+        }
+
 
         //Clear list of numbers to be able to generate new ones.
         numbers.Clear();
@@ -68,47 +62,47 @@ public class numbers_activity : MonoBehaviour
             switch(rng){
                 case 1:
                     generated_numbers.Add(rng.ToString());
-                    canva_to_display.Add(output1);
+                    canva_to_display.Add(0);
                     break;
                 
                 case 2:
                     generated_numbers.Add(rng.ToString());
-                    canva_to_display.Add(output2);
+                    canva_to_display.Add(1);
                     break;
                 
                 case 3:
                     generated_numbers.Add(rng.ToString());
-                    canva_to_display.Add(output3);
+                    canva_to_display.Add(2);
                     break;
             
                 case 4:
                     generated_numbers.Add(rng.ToString());
-                    canva_to_display.Add(output4);
+                    canva_to_display.Add(3);
                     break;
                 
                 case 5:
                     generated_numbers.Add(rng.ToString());
-                    canva_to_display.Add(output5);
+                    canva_to_display.Add(4);
                     break;
 
                 case 6:
                     generated_numbers.Add(rng.ToString());
-                    canva_to_display.Add(output6);
+                    canva_to_display.Add(5);
                     break;
 
                 case 7:
                     generated_numbers.Add(rng.ToString());
-                    canva_to_display.Add(output7);
+                    canva_to_display.Add(6);
                     break;
 
                 case 8:
                     generated_numbers.Add(rng.ToString());
-                    canva_to_display.Add(output8);
+                    canva_to_display.Add(7);
                     break;
 
                 case 9:
                     generated_numbers.Add(rng.ToString());
-                    canva_to_display.Add(output9);
+                    canva_to_display.Add(8);
                     break;
 
                 default:
@@ -146,9 +140,13 @@ public class numbers_activity : MonoBehaviour
 
         main_output.text = "Hello world!";
 
-        foreach (Canvas element in canva_to_display){
-            //TextMeshProUGUI Text = element.Find("Label");
-            //Text.text = "Hello world!";
+        for (int i=0; i<4; i++){
+            //Enable all visible canvas.
+            allCanvas[canva_to_display[i]].SetActive(true);
+
+            //Obtain the label reference to change its text.
+            TextMeshProUGUI label = allCanvas[canva_to_display[i]].GetComponentInChildren<TextMeshProUGUI>();
+            label.text = numbers[i].ToString();
         }
 
         //Show values. Also, the float numbers need to be converted into string with ToString().
