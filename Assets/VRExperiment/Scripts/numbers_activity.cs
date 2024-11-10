@@ -15,12 +15,21 @@ public class numbers_activity : MonoBehaviour
 
     //Output fields
     public TextMeshProUGUI main_output; //Main testing field
+    public TextMeshProUGUI time_output;
 
     //Creating list (array is not recommended).
     public List<float> numbers;
     public List<string> generated_numbers;
     public List<int> canva_to_display;
 
+    //Time related variables. Done with help of the following source: https://discussions.unity.com/t/how-do-i-calculate-accurately-time-passed-in-seconds-for-c/510112/15
+    public float time_spent;
+
+    //Variables related to activity state.
+    public bool activity_started;
+
+
+    
     //Start is called before the first frame update
     //Done with help of: https://www.youtube.com/watch?v=JAkD9bwQVAE
     void Start(){
@@ -28,15 +37,32 @@ public class numbers_activity : MonoBehaviour
         //Make all canvas untoggable.
         allCanvas = new GameObject[parentObject.transform.childCount];
 
+        //Specify that the activity has not started yet.
+        activity_started = false;
+
         for (int i=0; i<allCanvas.Length; i++){
             allCanvas[i] = parentObject.transform.GetChild(i).GetChild(0).gameObject;
             allCanvas[i].SetActive(false); //Disable all the canvas.
         }
+
+    }
+
+    //Add one second to counter, with the help of InvokeRepeating().
+    public void Count(){
+        time_spent++;
     }
 
 
     public void GenerateNumbers(){
 
+        //Avoid self calling it.
+        if (time_spent == 0){
+            InvokeRepeating("Count", 1, 1);
+        }
+
+        //The activity has started.
+        activity_started = true;
+        
         //Reset canvas state
         for (int i=0; i<allCanvas.Length; i++){
             allCanvas[i].SetActive(false); //Disable all the canvas.
@@ -138,7 +164,7 @@ public class numbers_activity : MonoBehaviour
 
     public void ShowValues(){
 
-        main_output.text = "Hello world!";
+        main_output.text = "Click again to reset values.";
 
         for (int i=0; i<4; i++){
             //Enable all visible canvas.
@@ -148,9 +174,44 @@ public class numbers_activity : MonoBehaviour
             TextMeshProUGUI label = allCanvas[canva_to_display[i]].GetComponentInChildren<TextMeshProUGUI>();
             label.text = numbers[i].ToString();
         }
+    }
 
-        //Show values. Also, the float numbers need to be converted into string with ToString().
-        //output1.text = numbers[0];
-        //output2.text = numbers[1];
+
+    public void EnableLabels(){
+        for (int i=0; i<allCanvas.Length; i++){
+            TextMeshProUGUI label = parentObject.transform.GetChild(i).GetChild(0).GetChild(0).GetChild(0).GetComponent<TextMeshProUGUI>();
+            label.enabled = true; //Disable all the canvas.
+        }
+    }
+
+
+    public void CaptureValue(TextMeshProUGUI label){
+        Debug.Log((float) Convert.ToDouble(label.text)); //https://stackoverflow.com/questions/11202673/converting-string-to-float-in-c-sharp
+  
+        float captured_value = (float) Convert.ToDouble(label.text);
+
+        if (captured_value == numbers[0]){
+            Debug.Log("This is the high number!");
+            numbers.RemoveAt(0);
+            label.enabled = false;
+        } else {
+            Debug.Log("This ain't :(");
+        }
+    }
+
+    void Update(){
+
+        //Update how many seconds have passed.
+        if (activity_started == true){
+            time_output.text = "Time spent: " + time_spent.ToString() + "s";
+        }
+
+        //Debug.Log(numbers.Count);
+
+        if (numbers.Count == 0 && activity_started == true){
+            GenerateNumbers();
+            EnableLabels(); //Without this, some labels will not appear.
+            ShowValues();
+        }
     }
 }
