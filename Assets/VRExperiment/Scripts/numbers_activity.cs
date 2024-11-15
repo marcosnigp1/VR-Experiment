@@ -15,7 +15,7 @@ public class numbers_activity : MonoBehaviour
 
     //Output fields
     public TextMeshProUGUI main_output; //Main testing field
-    public TextMeshProUGUI time_output;
+    public TextMeshProUGUI time_and_error_output;
 
     //Creating list (array is not recommended).
     public List<float> numbers;
@@ -24,6 +24,8 @@ public class numbers_activity : MonoBehaviour
 
     //Time related variables. Done with help of the following source: https://discussions.unity.com/t/how-do-i-calculate-accurately-time-passed-in-seconds-for-c/510112/15
     public float time_spent;
+    public int error_count = 0;
+    public int activity_limit;
 
     //Variables related to activity state.
     public bool activity_started;
@@ -195,15 +197,16 @@ public class numbers_activity : MonoBehaviour
             numbers.RemoveAt(0);
             label.enabled = false;
         } else {
+            error_count++;
             Debug.Log("This ain't :(");
-        }
+        } 
     }
 
     void Update(){
 
         //Update how many seconds have passed.
         if (activity_started == true){
-            time_output.text = "Time spent: " + time_spent.ToString() + "s";
+            time_and_error_output.text = "Time spent: " + time_spent.ToString() + "s\nError count:" + error_count;
         }
 
         //Debug.Log(numbers.Count);
