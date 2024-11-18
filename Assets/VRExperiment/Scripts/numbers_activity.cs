@@ -166,7 +166,8 @@ public class numbers_activity : MonoBehaviour
 
     public void ShowValues(){
 
-        main_output.text = "Click again to reset values.";
+        //main_output.text = "Click again to reset values.";
+        main_output.text = "";
 
         for (int i=0; i<4; i++){
             //Enable all visible canvas.
