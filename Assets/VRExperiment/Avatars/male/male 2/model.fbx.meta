@@ -1,164 +1,224 @@
 fileFormatVersion: 2
-guid: c24d57b4e84ca5046bf8b65d08cc36e6
+guid: c8cbb24891ee3b04ab097a643f1e6270
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AvatarBody
+    second: {fileID: 2100000, guid: fbe52f2558d72f14ca88dcc80b801e9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AvatarEyelashes
+    second: {fileID: 2100000, guid: 9cf26444eb2e56946bc87d1b33c8d0ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AvatarHead
+    second: {fileID: 2100000, guid: 80f97e25f53900d4fbab4f7ffa721679, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AvatarLeftCornea
+    second: {fileID: 2100000, guid: cbc83f8680d83f34fa8eded7a0d434f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AvatarLeftEyeball
+    second: {fileID: 2100000, guid: 2bebfeacefef42f41860587d9cbf1f45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AvatarRightCornea
+    second: {fileID: 2100000, guid: 7491d0296a309fd4e9147a231770e317, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AvatarRightEyeball
+    second: {fileID: 2100000, guid: 64b91fc8bef5b134e871a71894b814f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AvatarTeethLower
+    second: {fileID: 2100000, guid: 635b66bfc73c066488b7568b07907f8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: AvatarTeethUpper
+    second: {fileID: 2100000, guid: 053a145b753f8de44819692def2640a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: outfit_bottom
+    second: {fileID: 2100000, guid: a77e1007941e111449adce4cad308abc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: outfit_shoes
+    second: {fileID: 2100000, guid: e7655308ab71cab4d8e88d736dc66c7b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: outfit_top
+    second: {fileID: 2100000, guid: 12c8af291008dfe41ba6b4682d3ba5f9, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: AvatarBodyMale_Color_1K
-    second: {fileID: 2800000, guid: 5e467b3bc49371b4ea25f2babd60e329, type: 3}
+    second: {fileID: 2800000, guid: 615239607b37c904f8259b16177c0720, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: AvatarBodyMale_Normal1_1K
-    second: {fileID: 2800000, guid: 24528b3d308eee24e8940d7f0ecf8191, type: 3}
+    second: {fileID: 2800000, guid: 1e64eac0067033649b929af528fa0ee4, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: AvatarBodyMale_Roughness_1K
-    second: {fileID: 2800000, guid: 10126fe13923ac743a1d4cb203b9e3c6, type: 3}
+    second: {fileID: 2800000, guid: 750391fd3f8296743b97174701a6d5e2, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: AvatarBodyMale_UnityMetallicSmoothness_1K
-    second: {fileID: 2800000, guid: 787de2c79a20c074c97b6415918fae81, type: 3}
+    second: {fileID: 2800000, guid: 2148db93f2438d446a1dba4457059901, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: AvatarEyes_Color_512
-    second: {fileID: 2800000, guid: deaddea844c8ee84a88df5fbded93204, type: 3}
+    second: {fileID: 2800000, guid: 420bd55934827c547a5e095d90021a68, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: AvatarEyes_Normal_512
-    second: {fileID: 2800000, guid: b9bbaeea2264597428a7014931fc57b6, type: 3}
+    second: {fileID: 2800000, guid: 550aacb9c2039b94dbd6d4db5d7d7477, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: AvatarEyes_Roughness_512
-    second: {fileID: 2800000, guid: 35fc959be6ab66243859ceaf7509b52c, type: 3}
+    second: {fileID: 2800000, guid: 05c65319b9dfe6d4a888802d6d2c0fe4, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: AvatarEyes_UnityMetallicSmoothness_512
-    second: {fileID: 2800000, guid: 8fcbf519d31cd154e88837f6368ee405, type: 3}
+    second: {fileID: 2800000, guid: bd9b4631a723ad04b8e05bd9a6da11cd, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: AvatarHeadMale_Color_1K
-    second: {fileID: 2800000, guid: ab05790f95c7cdb4f92b81d28282a000, type: 3}
+    second: {fileID: 2800000, guid: 6fa9ce870cb82ba458095a97971d9e34, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: AvatarHeadMale_Normal1_1K
-    second: {fileID: 2800000, guid: 1b4bf2714ac993543b03f8fa7502376c, type: 3}
+    second: {fileID: 2800000, guid: b86d2a7457d38224791cc4d91de971b7, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: AvatarHeadMale_Roughness_1K
-    second: {fileID: 2800000, guid: c9eb8d123f6c1044cac3b1b4b4905f5a, type: 3}
+    second: {fileID: 2800000, guid: 588a1d767131a4c41b5e0ea0c3ff0a4a, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: AvatarHeadMale_UnityMetallicSmoothness_1K
-    second: {fileID: 2800000, guid: 2cd13f4a1d40f6546bcf27b5f48c8a1a, type: 3}
+    second: {fileID: 2800000, guid: caf32f943bf9aeb46b1ef8d3eb5f0de5, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: AvatarLeftCornea_Color_512
-    second: {fileID: 2800000, guid: 6065656d26405064681b91073aae0337, type: 3}
+    second: {fileID: 2800000, guid: a82ee61b1b099d6438360d5f130182e6, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: AvatarRightCornea_Color_512
-    second: {fileID: 2800000, guid: 598d47fc64fd7854f98fbcf94d99af10, type: 3}
+    second: {fileID: 2800000, guid: 0bec57a67e065294c850f8995c52a4d2, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: AvatarTeeth_Color_1K
-    second: {fileID: 2800000, guid: bcc572265725aa94383ca351886cc61e, type: 3}
+    second: {fileID: 2800000, guid: 661a08783fa77644491a56dced33ae52, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: AvatarTeeth_Normal1_1K
-    second: {fileID: 2800000, guid: 13aa86df8a5c34c4ebeebaf26114c3ad, type: 3}
+    second: {fileID: 2800000, guid: 628904a822ca6964e947dc7dd38baab3, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: AvatarTeeth_Roughness_1K
-    second: {fileID: 2800000, guid: fde87247a916814499050fd9e7d9138e, type: 3}
+    second: {fileID: 2800000, guid: 5cc930995dfc967498039c7458805017, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: AvatarTeeth_UnityMetallicSmoothness_1K
-    second: {fileID: 2800000, guid: f9df49702a36de646a8623823337e501, type: 3}
+    second: {fileID: 2800000, guid: 039fc8fec5120b245a67a08e24449c9c, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: jeans_AZAT_Color_1K
-    second: {fileID: 2800000, guid: 16ea28d8f1278354ebd2307cfb398e53, type: 3}
+    second: {fileID: 2800000, guid: 22d5af7c81b41dc45b98647c8337fefa, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: jeans_AZAT_Metallic_1K
-    second: {fileID: 2800000, guid: 1f247ad528dd0d7449f4ece47e82f7d5, type: 3}
+    second: {fileID: 2800000, guid: 8dd776499ed454a4193b5d8e098b767b, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: jeans_AZAT_Normal_1K
-    second: {fileID: 2800000, guid: 1b8c2544bacf345458a5922de9bab467, type: 3}
+    second: {fileID: 2800000, guid: e0539a27476323f4780ddb630ce8f50c, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: jeans_AZAT_Roughness_1K
-    second: {fileID: 2800000, guid: 1ed7fc2efa0e4fa499d6e9a7be8f95c4, type: 3}
+    second: {fileID: 2800000, guid: 045c33b0a2b2eb341ac03d8ac365c30c, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: jeans_AZAT_UnityMetallicSmoothness_1K
-    second: {fileID: 2800000, guid: 2e8020ef335d1cc44a2369a79e4bde4f, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: longsleeve_Debed_Color_1K
-    second: {fileID: 2800000, guid: 36fa4d94c527cac4a99eaacde6eb913e, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: longsleeve_Debed_Normal_1K
-    second: {fileID: 2800000, guid: 95cf0465762da624a885774740228155, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: longsleeve_Debed_Roughness_1K
-    second: {fileID: 2800000, guid: c8b4d2e0448ea5143875c711e738e9d3, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: longsleeve_Debed_UnityMetallicSmoothness_1K
-    second: {fileID: 2800000, guid: 9698aa4255f2778479b690978b7d3f80, type: 3}
+    second: {fileID: 2800000, guid: f80ed9dd515bfb043b2c22c829f1c7ac, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: sneakers_AZAT_Color_1K
-    second: {fileID: 2800000, guid: 8950eceb0f34ca243810cd865cc5c9e8, type: 3}
+    second: {fileID: 2800000, guid: 7cbb5cac717c50e478b2fe6e47b32140, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: sneakers_AZAT_Normal_1K
-    second: {fileID: 2800000, guid: 6941458d3763730458a1cfee7cc9344b, type: 3}
+    second: {fileID: 2800000, guid: 410791e65eab02e4ca4869a093f592e2, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: sneakers_AZAT_Roughness_1K
-    second: {fileID: 2800000, guid: cc4b7fc1ff319724e8bebdd0a14e50c6, type: 3}
+    second: {fileID: 2800000, guid: b6b63f87748649f4e882566fedbbac9b, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: sneakers_AZAT_UnityMetallicSmoothness_1K
-    second: {fileID: 2800000, guid: ac102ec7f19c28842b9516c8826737e1, type: 3}
+    second: {fileID: 2800000, guid: adc797046d166c04ca8f8a7b8f8ae955, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t-shirt_Hakari_Color_1K
+    second: {fileID: 2800000, guid: 1e66e79c2f3fc564bbd15687dce5c9bb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t-shirt_Hakari_Normal_1K
+    second: {fileID: 2800000, guid: c9e69d5b0411e9f4082539dea1585e08, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t-shirt_Hakari_Roughness_1K
+    second: {fileID: 2800000, guid: e6c6abf7f555c9145bfcf9b6a56a751f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: t-shirt_Hakari_UnityMetallicSmoothness_1K
+    second: {fileID: 2800000, guid: 273f9dfd644b22a4ca03554af763d00a, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
