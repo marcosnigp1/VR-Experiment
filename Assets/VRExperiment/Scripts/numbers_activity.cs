@@ -12,6 +12,7 @@ public class numbers_activity : MonoBehaviour
     //Parent GameObject
     public GameObject parentObject;  //Done with help of: https://www.youtube.com/watch?v=JAkD9bwQVAE
     public GameObject[] allCanvas;
+    public AudioSource[] soundSources;
 
     //Output fields
     public TextMeshProUGUI main_output; //Main testing field
@@ -25,7 +26,10 @@ public class numbers_activity : MonoBehaviour
     //Time related variables. Done with help of the following source: https://discussions.unity.com/t/how-do-i-calculate-accurately-time-passed-in-seconds-for-c/510112/15
     public float time_spent;
     public int error_count = 0;
-    public int activity_limit;
+    public int activity_limit = 0;
+
+    //Check if values are printed.
+    public bool values_printed = false;
 
     //Variables related to activity state.
     public bool activity_started;
@@ -194,28 +198,46 @@ public class numbers_activity : MonoBehaviour
         float captured_value = (float) Convert.ToDouble(label.text);
 
         if (captured_value == numbers[0]){
-            Debug.Log("This is the high number!");
+            Debug.Log("Right number");
+            soundSources[0].Play(0); //Index 0 is success, 1 is wrong choice. 2 is finish.
             numbers.RemoveAt(0);
             label.enabled = false;
         } else {
             error_count++;
-            Debug.Log("This ain't :(");
+            soundSources[1].Play(0); //Index 0 is success, 1 is wrong choice. 2 is finish.
+            Debug.Log("Error number: " + error_count.ToString());
         } 
     }
 
-    void Update(){
+    public void Update(){
 
         //Update how many seconds have passed.
         if (activity_started == true){
-            time_and_error_output.text = "Time spent: " + time_spent.ToString() + "s\nError count:" + error_count;
+            time_and_error_output.text = "Round: " + activity_limit.ToString() + "/6";
         }
 
         //Debug.Log(numbers.Count);
 
-        if (numbers.Count == 0 && activity_started == true){
-            GenerateNumbers();
-            EnableLabels(); //Without this, some labels will not appear.
-            ShowValues();
+        if (numbers.Count == 0 && activity_started == true && activity_limit!=6){
+            //This goes first, if not the values are not properly shown.
+            activity_limit++;
+            Debug.Log(activity_limit);
+            if (activity_limit < 6){
+                GenerateNumbers();
+                EnableLabels(); //Without this, some labels will not appear.
+                ShowValues();
+            }
+        } else if (activity_limit == 6){
+
+            
+            time_and_error_output.text = "Activity is finished, you can take the headset off.";
+
+            //Avoid printing the same file/output over and over again.
+            if (values_printed == false){
+                soundSources[2].Play(0) ; //Index 0 is success, 1 is wrong choice. 2 is finish.
+                Debug.Log("Error count: " + error_count.ToString() + " Time Spent (in seconds): " + time_spent.ToString());
+                values_printed = true;
+            }
         }
     }
 }
