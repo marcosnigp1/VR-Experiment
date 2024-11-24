@@ -1,13 +1,18 @@
 using System; //We need this to sort values.
+using System.IO; //Helps to fix the filePath error 
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro; //This will help in getting the UI values.
+using OfficeOpenXml;
 
 using Random = UnityEngine.Random; //This helps to fix conflicts with system.
 
 public class numbers_activity : MonoBehaviour
 {
+
+    //File path for the excel file.
+    private string filePath;
 
     //Parent GameObject
     public GameObject parentObject;  //Done with help of: https://www.youtube.com/watch?v=JAkD9bwQVAE
@@ -23,10 +28,11 @@ public class numbers_activity : MonoBehaviour
     public List<string> generated_numbers;
     public List<int> canva_to_display;
 
-    //Time related variables. Done with help of the following source: https://discussions.unity.com/t/how-do-i-calculate-accurately-time-passed-in-seconds-for-c/510112/15
+    //Time and tracking related variables. Done with help of the following source: https://discussions.unity.com/t/how-do-i-calculate-accurately-time-passed-in-seconds-for-c/510112/15
     public float time_spent;
     public int error_count = 0;
     public int activity_limit = 0;
+    public string character_chosen = " ";
 
     //Check if values are printed.
     public bool values_printed = false;
@@ -42,6 +48,9 @@ public class numbers_activity : MonoBehaviour
     //Start is called before the first frame update
     //Done with help of: https://www.youtube.com/watch?v=JAkD9bwQVAE
     void Start(){
+
+        // Set the file path where the Excel file will be saved
+        filePath = Path.Combine(Application.persistentDataPath, "Results.xlsx");
 
         //Make all canvas untoggable.
         allCanvas = new GameObject[parentObject.transform.childCount];
@@ -212,6 +221,12 @@ public class numbers_activity : MonoBehaviour
         } 
     }
 
+    public void CaptureName(TextMeshProUGUI label){
+        Debug.Log("Character chosen is: " + label.text);
+        character_chosen = label.text;
+    }
+
+
     public void Update(){
 
         //Update how many seconds have passed.
@@ -240,8 +255,62 @@ public class numbers_activity : MonoBehaviour
                 soundSources[2].Play(0) ; //Index 0 is success, 1 is wrong choice. 2 is finish.
                 Debug.Log("Error count: " + error_count.ToString() + " Time Spent (in seconds): " + time_spent.ToString());
                 values_printed = true;
+
+                //Generate random ID and append to excel the rest of information.
+                int random_id = Random.Range(100, 999);
+                AppendToExcel(random_id, error_count.ToString(), time_spent.ToString(), character_chosen);
+
+                //Play final instructions audio.
                 end.Play();
             }
+        }
+    }
+
+
+    // ---- This code was done with help of ChatGPT ----
+
+    //Basically, it helps to save an excel file with the results.
+    public void AppendToExcel(int id, string error_count, string time_spent, string character_chosen)
+    {
+        // Enable EPPlus license context (necessary from EPPlus v5+)
+        ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
+
+        FileInfo file = new FileInfo(filePath);
+
+        using (var package = new ExcelPackage(file))
+        {
+            ExcelWorksheet worksheet;
+
+            if (file.Exists)
+            {
+                // Load the existing worksheet
+                worksheet = package.Workbook.Worksheets[0]; // Assumes the first sheet
+            }
+            else
+            {
+                // Create a new worksheet if the file does not exist
+                worksheet = package.Workbook.Worksheets.Add("Sheet1");
+
+                // Add headers to the worksheet
+                worksheet.Cells[1, 1].Value = "ID";
+                worksheet.Cells[1, 2].Value = "Error Count";
+                worksheet.Cells[1, 3].Value = "Time Spent (in seconds)";
+                worksheet.Cells[1, 4].Value = "Character Chosen";
+            }
+
+            // Find the next available row
+            int nextRow = worksheet.Dimension == null ? 2 : worksheet.Dimension.End.Row + 1;
+
+            // Add data to the next row
+            worksheet.Cells[nextRow, 1].Value = id;
+            worksheet.Cells[nextRow, 2].Value = error_count;
+            worksheet.Cells[nextRow, 3].Value = time_spent;
+            worksheet.Cells[nextRow, 4].Value = character_chosen;
+
+            // Save the updated Excel file
+            package.Save();
+
+            Debug.Log($"Data appended to Excel file at: {filePath}");
         }
     }
 }

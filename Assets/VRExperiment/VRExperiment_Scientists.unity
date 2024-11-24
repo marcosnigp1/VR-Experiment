@@ -11178,6 +11178,7 @@ MonoBehaviour:
   time_spent: 0
   error_count: 0
   activity_limit: 0
+  character_chosen: ' '
   values_printed: 0
   activity_started: 0
   end: {fileID: 588229405}
@@ -27659,14 +27660,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 850082673}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000020617112, y: -0.70790756, z: -0.00000019013889, w: -0.7063052}
-  m_LocalPosition: {x: 0.349, y: -0.94, z: 0.761}
+  m_LocalRotation: {x: 0.0038896138, y: -0.41030547, z: 0.009881343, w: -0.91188633}
+  m_LocalPosition: {x: 0.035881996, y: 0.3769455, z: 0.43973395}
   m_LocalScale: {x: 0.6129684, y: 0.37806693, z: 0.35790834}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2138251868}
   m_Father: {fileID: 1002489207}
-  m_LocalEulerAnglesHint: {x: 0, y: 90.13, z: 360}
+  m_LocalEulerAnglesHint: {x: 0.058, y: 48.45, z: 358.784}
 --- !u!1 &850230196
 GameObject:
   m_ObjectHideFlags: 0
@@ -29463,6 +29464,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 251013684}
+        m_TargetAssemblyTypeName: numbers_activity, Assembly-CSharp
+        m_MethodName: CaptureName
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 674980228}
+          m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!1 &889325929
 GameObject:
@@ -29671,6 +29684,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 251013684}
+        m_TargetAssemblyTypeName: numbers_activity, Assembly-CSharp
+        m_MethodName: CaptureName
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 277088573}
+          m_ObjectArgumentAssemblyTypeName: TMPro.TextMeshProUGUI, Unity.TextMeshPro
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
