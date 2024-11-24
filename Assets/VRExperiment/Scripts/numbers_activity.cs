@@ -34,6 +34,9 @@ public class numbers_activity : MonoBehaviour
     //Variables related to activity state.
     public bool activity_started;
 
+    //End audio.
+    public AudioSource end;
+
 
     
     //Start is called before the first frame update
@@ -237,6 +240,7 @@ public class numbers_activity : MonoBehaviour
                 soundSources[2].Play(0) ; //Index 0 is success, 1 is wrong choice. 2 is finish.
                 Debug.Log("Error count: " + error_count.ToString() + " Time Spent (in seconds): " + time_spent.ToString());
                 values_printed = true;
+                end.Play();
             }
         }
     }

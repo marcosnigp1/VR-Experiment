@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/VRExperiment/VRExperiment.unity
+    path: Assets/VRExperiment/VRExperiment_Scientists.unity
     guid: 0d618422ab45ab049bdd0d606ec0db91
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 6e37b107fa0226c489cc2ddf529f8917, type: 2}
