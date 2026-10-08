@@ -7,8 +7,3 @@ This was showcased at the __16th Student Research Conference on Applied Computin
 # Video demonstration of the experience
 
 https://github.com/user-attachments/assets/71adfe75-ea67-4d79-8c5c-591fe9b0edf6
-
-
-# Showcase of the project at NYUAD Undergraduate Research
-
-[View the Instagram post](https://www.instagram.com/nyuadundergradresearch/p/DPOpM4FjTfQ/)
