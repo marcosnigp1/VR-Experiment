@@ -2,7 +2,7 @@
 
 This is an experiment in which users will have the chance to embody a character in order to measure their cognitive ability. In order to make this work, having Unity Editor as well as a VR device is necessary.
 
-This was showcased at the 16th Student Research Conference on Applied Computing at Zayed University, which can be seen here at the following Instagram post from NYUAD Undergraduate Research: [View the Instagram post](https://www.instagram.com/nyuadundergradresearch/p/DPOpM4FjTfQ/)
+This was showcased at the __16th Student Research Conference on Applied Computing at Zayed University__, which can be seen here at the following Instagram post from __NYUAD Undergraduate Research__: [View the Instagram post](https://www.instagram.com/nyuadundergradresearch/p/DPOpM4FjTfQ/)
 
 # Video demonstration of the experience
 
